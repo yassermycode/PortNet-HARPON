@@ -1,0 +1,44 @@
+from enum import Enum
+
+class CaseStatus(str, Enum):
+    PENDING = "PENDING"
+    UPLOADED = "UPLOADED"
+    ANALYZING = "ANALYZING"
+    DONE = "DONE"
+    FAILED = "FAILED"
+    FLAGGED = "FLAGGED"
+    CLEARED = "CLEARED"
+
+class RiskLevel(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+class RecommendedAction(str, Enum):
+    RELEASE = "RELEASE"
+    REQUEST_DOCS = "REQUEST_DOCS"
+    INSPECT = "INSPECT"
+
+class DocType(str, Enum):
+    INVOICE = "INVOICE"
+    BL = "BL"
+    PACKING = "PACKING"
+    CERTIFICATE = "CERTIFICATE"
+
+class EntityType(str, Enum):
+    IMPORTER = "IMPORTER"
+    FORWARDER = "FORWARDER"
+    SUPPLIER = "SUPPLIER"
+    CONSIGNEE = "CONSIGNEE"
+    NOTIFY_PARTY = "NOTIFY_PARTY"
+
+class EventType(str, Enum):
+    CASE_CREATED = "CASE_CREATED"
+    UPLOAD_DONE = "UPLOAD_DONE"
+    ANALYSIS_START = "ANALYSIS_START"
+    ANALYSIS_DONE = "ANALYSIS_DONE"
+    ANALYSIS_FAILED = "ANALYSIS_FAILED"
+    DECISION_MADE = "DECISION_MADE"
+    FEEDBACK = "FEEDBACK"
+    EXPORT_EVIDENCE = "EXPORT_EVIDENCE"
