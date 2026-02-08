@@ -1,4 +1,4 @@
-# 🚢 PortNet HARPON
+#  PortNet HARPON
 
 **Système Intelligent d'Analyse de Risque Douanier**
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 
 - [À propos](#-à-propos)
 - [Fonctionnalités](#-fonctionnalités)
@@ -25,36 +25,36 @@
 
 ---
 
-## 🎯 À propos
+##  À propos
 
 **PortNet HARPON** est une application web full-stack d'analyse intelligente de risque douanier. Elle utilise l'Intelligence Artificielle et le traitement du langage naturel (NLP) pour analyser automatiquement les documents douaniers et calculer un score de risque.
 
 ### Problématique
 
 Les autorités douanières traitent quotidiennement des milliers de documents. L'analyse manuelle est :
-- ⏱️ **Chronophage** : Plusieurs heures par dossier
-- ❌ **Sujette aux erreurs** : Fatigue humaine
-- 📊 **Difficile à standardiser** : Critères variables
+-  **Chronophage** : Plusieurs heures par dossier
+-  **Sujette aux erreurs** : Fatigue humaine
+-  **Difficile à standardiser** : Critères variables
 
 ### Solution
 
 PortNet HARPON automatise l'analyse avec :
-- 🤖 **IA d'analyse de documents** : Extraction automatique de données
-- 📊 **Scoring de risque** : Calcul basé sur 4 critères objectifs
-- 📈 **Visualisation** : Graphiques et tableaux de bord
-- 📄 **Rapports PDF** : Génération automatique de rapports professionnels
+-  **IA d'analyse de documents** : Extraction automatique de données
+-  **Scoring de risque** : Calcul basé sur 4 critères objectifs
+-  **Visualisation** : Graphiques et tableaux de bord
+-  **Rapports PDF** : Génération automatique de rapports professionnels
 
 ---
 
-## ✨ Fonctionnalités
+##  Fonctionnalités
 
-### 🔐 Authentification & Sécurité
+### Authentification & Sécurité
 - Authentification JWT sécurisée
 - Gestion des rôles (Admin, Analyste, Viewer)
 - Sessions persistantes
 - Hashage des mots de passe (bcrypt)
 
-### 📊 Dashboard Interactif
+### Dashboard Interactif
 - Statistiques temps réel
 - Graphiques interactifs (Chart.js)
   - Répartition par statut
@@ -62,14 +62,14 @@ PortNet HARPON automatise l'analyse avec :
   - Évolution temporelle
 - Indicateurs clés de performance (KPI)
 
-### 📁 Gestion des Dossiers
+### Gestion des Dossiers
 - Création, lecture, mise à jour, suppression (CRUD)
 - Statuts multiples : OPEN, IN_REVIEW, FLAGGED, CLEARED, CLOSED
 - Niveaux de priorité : LOW, MEDIUM, HIGH, URGENT
 - Assignation à des analystes
 - Filtrage et recherche avancés
 
-### 📄 Analyse Intelligente de Documents
+### Analyse Intelligente de Documents
 - **Upload multi-formats** : PDF, images (PNG, JPG)
 - **Extraction de texte** : Double méthode (PyPDF2 + pdfplumber)
 - **Extraction de données structurées** :
@@ -81,7 +81,7 @@ PortNet HARPON automatise l'analyse avec :
   - Pays d'origine/destination
   - Emails et téléphones
 
-### 🧠 Intelligence Artificielle
+### Intelligence Artificielle
 - **Traitement du langage naturel** (spaCy)
 - **Calcul du score de risque** (0-100) basé sur :
   1. Pays à risque (30 points)
@@ -91,13 +91,13 @@ PortNet HARPON automatise l'analyse avec :
 - **Détection de facteurs de risque**
 - **Recommandations automatiques**
 
-### 📝 Système de Notes
+### Système de Notes
 - Notes collaboratives par dossier
 - Auteur et horodatage
 - Suppression par l'auteur
 - Historique complet
 
-### 📈 Visualisation & Reporting
+### Visualisation & Reporting
 - Graphiques interactifs (barres, circulaires, linéaires)
 - Export PDF professionnel
   - En-tête avec logo
@@ -107,14 +107,14 @@ PortNet HARPON automatise l'analyse avec :
   - Recommandations
   - Pagination automatique
 
-### 🔔 Notifications
+### Notifications
 - Toasts modernes (react-toastify)
 - Feedback en temps réel
 - Types : succès, erreur, info, warning
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 ### Backend
 | Technologie | Version | Utilisation |
@@ -148,7 +148,7 @@ PortNet HARPON automatise l'analyse avec :
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 PortNet-HARPON/
@@ -235,7 +235,7 @@ PortNet-HARPON/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prérequis
 
@@ -309,8 +309,8 @@ alembic upgrade head
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
 ```
 
-✅ Le backend est accessible sur : **http://127.0.0.1:8001**  
-📚 Documentation API : **http://127.0.0.1:8001/docs**
+ Le backend est accessible sur : **http://127.0.0.1:8001**  
+ Documentation API : **http://127.0.0.1:8001/docs**
 
 ### 4. Installation du Frontend
 
@@ -326,11 +326,11 @@ npm install
 npm run dev
 ```
 
-✅ Le frontend est accessible sur : **http://localhost:5173**
+ Le frontend est accessible sur : **http://localhost:5173**
 
 ---
 
-## 📖 Utilisation
+##  Utilisation
 
 ### Première connexion
 
@@ -338,7 +338,7 @@ Identifiants par défaut :
 - **Username** : `admin`
 - **Password** : `admin123`
 
-⚠️ **Important** : Changez le mot de passe admin après la première connexion !
+ **Important** : Changez le mot de passe admin après la première connexion !
 
 ### Workflow typique
 
@@ -374,12 +374,12 @@ Poids net : 2500 KG
 **Résultat attendu** :
 - Score de risque : ~55/100 (MOYEN)
 - Facteurs :
-  - ⚠️ Pays à risque détecté : CHINE
-  - ⚠️ Montant élevé : 150000 USD
+  -  Pays à risque détecté : CHINE
+  -  Montant élevé : 150000 USD
 
 ---
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Authentification
 
@@ -444,11 +444,11 @@ Response:
 }
 ```
 
-📖 **Documentation complète** : http://127.0.0.1:8001/docs
+ **Documentation complète** : http://127.0.0.1:8001/docs
 
 ---
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 ### Dashboard
 ![Dashboard](docs/screenshots/dashboard.png)  
@@ -468,7 +468,7 @@ Response:
 
 ---
 
-## 🤝 Contribuer
+##  Contribuer
 
 Les contributions sont les bienvenues ! Voici comment participer :
 
@@ -487,19 +487,19 @@ Les contributions sont les bienvenues ! Voici comment participer :
 
 ---
 
-## 📝 Licence
+##  Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-## 👥 Auteurs
+##  Auteurs
 
 - **Votre Nom** - *Développeur principal* - [GitHub](https://github.com/votre-username)
 
 ---
 
-## 🙏 Remerciements
+##  Remerciements
 
 - [FastAPI](https://fastapi.tiangolo.com/) - Framework backend moderne
 - [React](https://react.dev/) - Bibliothèque UI
@@ -508,7 +508,7 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-## 📞 Support
+##  Support
 
 Pour toute question ou problème :
 - **Issues** : [GitHub Issues](https://github.com/votre-username/PortNet-HARPON/issues)
